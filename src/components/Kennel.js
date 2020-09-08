@@ -3,10 +3,10 @@ import {Animal} from "./animals/Animal"
 import {Employee} from "./employee/Employee"
 import {Customer} from "./customer/Customer"
 import {Location} from "./location/Location"
-import "./Animals.css"
-import "./Employee.css"
-import "./Customer.css"
-import "./Location.css"
+import "./animals/Animals.css"
+import "./employee/Employees.css"
+import "./customer/Customers.css"
+import "./location/Location.css"
 
 export const Kennel = () => (
     <>
@@ -30,12 +30,12 @@ export const Kennel = () => (
             <Employee />
         </article>
         <h2>Location</h2>
-        <article className="location">
+        <article className="locations">
             <Location />
             <Location />
         </article>
         <h2>Customer</h2>
-        <article className="customer">
+        <article className="customers">
             <Customer />
             <Customer />
             <Customer />
