@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Kennel} from "./components/Kennel"
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(<Kennel />, document.getElementById("root"))
 
 ReactDOM.render(
   <React.StrictMode>
