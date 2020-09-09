@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Kennel} from "./components/Kennel"
-import './index.css';
-
 import * as serviceWorker from './serviceWorker';
+import React from "react"
+import ReactDOM from "react-dom"
+import { BrowserRouter as Router } from "react-router-dom"
+import { Kennel } from "./components/Kennel"
 
-ReactDOM.render(<Kennel />, document.getElementById("root"))
-
-
+ReactDOM.render(
+    <Router>
+        <Kennel />
+    </Router>
+    , document.getElementById("root"))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
