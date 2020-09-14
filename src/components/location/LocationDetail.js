@@ -19,10 +19,10 @@ export const LocationDetail=(props)=>{
         <section className="location">
             <h1 className="location__name">{location.name}</h1>
             <div className="location__animals">Currently holding: {
-            animalArray.map(animalObj=>animalObj.name).join(",")
+            animalArray.map(animalObj=>animalObj.name).join(", ")
             }</div>
-            <div className="location__employees">Current employees:{
-                employeeArray.map(employeeObj=>employeeObj.name).join(",")
+            <div className="location__employees">Current employees: {
+                employeeArray.map(employeeObj=>employeeObj.name).join(", ")
             }
             </div>
         </section>

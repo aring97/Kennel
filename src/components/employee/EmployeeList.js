@@ -19,7 +19,7 @@ export const EmployeeList=(props)=>{
             {
                 employees.map(employeeObj=>{
                     const locationObj=locations.find(l=>l.id===employeeObj.locationId)
-                return<Employee key={employeeObj.id} employee={employeeObj||{}} location={locationObj || {}} />})
+                return<Employee key={employeeObj.id} employee={employeeObj||{}} location={locationObj || {}} props={props}/>})
             }
             </article>
         </div>
